@@ -24,6 +24,11 @@ class ProductController extends Controller
         ];
 
         $product = Product::create($data);
-        return redirect('/products');
+        return redirect('/products/' . $product->id . '/show');
+    }
+
+    public function show($id) {
+        $product = Product::find($id);
+        return view('products.show', ['singleProduct' => $product]);
     }
 }
