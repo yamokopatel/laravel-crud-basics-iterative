@@ -37,4 +37,14 @@ class ProductController extends Controller
         $product->delete();
         return redirect('/products/');
     }
+
+    public function edit($id) {
+        $product = Product::find($id);
+        return view('products.edit', ['singleProduct' => $product]);
+    }
+
+    public function update($id) {
+        $product = Product::find($id);
+        return $product;
+    }
 }
