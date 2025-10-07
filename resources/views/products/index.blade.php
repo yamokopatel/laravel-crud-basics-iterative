@@ -6,3 +6,5 @@
         </li>
     @endforeach
 </ul>
+
+<a href="/products/create">Create new product</a>
