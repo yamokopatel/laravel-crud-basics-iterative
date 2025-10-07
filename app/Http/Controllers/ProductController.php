@@ -43,8 +43,16 @@ class ProductController extends Controller
         return view('products.edit', ['singleProduct' => $product]);
     }
 
-    public function update($id) {
+    public function update(Request $request, $id) {
         $product = Product::find($id);
-        return $product;
+
+        $data = [
+            'name' => $request->name,
+            'quantity' => $request->quantity,
+            'description' => $request->description,
+        ];
+
+        $product->update($data);
+        return redirect('/products/' . $product->id . '/show');
     }
 }
