@@ -31,4 +31,10 @@ class ProductController extends Controller
         $product = Product::find($id);
         return view('products.show', ['singleProduct' => $product]);
     }
+
+    public function destroy($id) {
+        $product = Product::find($id);
+        $product->delete();
+        return redirect('/products/');
+    }
 }
