@@ -1,4 +1,4 @@
-<form action="/products/{{ $singleProduct }}" method="post">
+<form action="{{ route('products.update', ['product' => $singleProduct]) }}" method="post">
     @csrf
     @method('PUT')
 

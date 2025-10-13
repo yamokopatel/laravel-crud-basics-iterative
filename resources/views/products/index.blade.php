@@ -4,8 +4,8 @@
             <h1>{{ $product->name }}</h1>
             <p>{{ $product->description }}</p>
             <a href="{{ route('products.show', ['product' => $product]) }}">Show</a>
-            <a href="/products/{{ $product }}/edit">Edit</a>
-            <form action="/products/{{ $product }}" method="post">
+            <a href="{{ route('products.edit', ['product' => $product]) }}">Edit</a>
+            <form action="{{ route('products.delete', ['product' => $product]) }}" method="post">
                 @csrf
                 @method('DELETE')
 
