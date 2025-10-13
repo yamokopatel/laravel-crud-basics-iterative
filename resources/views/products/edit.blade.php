@@ -1,4 +1,4 @@
-<form action="/products/{{ $singleProduct->id }}" method="post">
+<form action="/products/{{ $singleProduct }}" method="post">
     @csrf
     @method('PUT')
 
