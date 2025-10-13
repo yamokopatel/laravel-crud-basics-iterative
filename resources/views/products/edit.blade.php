@@ -1,3 +1,5 @@
+<x-layout>
+
 <form action="{{ route('products.update', ['product' => $product]) }}" method="post">
     @csrf
     @method('PUT')
@@ -9,3 +11,5 @@
 </form>
 
 <a href="/products">Back to product list</a>
+
+</x-layout>

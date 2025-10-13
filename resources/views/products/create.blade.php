@@ -1,3 +1,9 @@
+<x-layout>
+
+    <x-slot:title>
+        Create
+    </x-slot>
+
 <form action="/products" method="post">
     @csrf
     <input type="text" name="name">
@@ -7,3 +13,5 @@
 </form>
 
 <a href="/products">Back to product list</a>
+
+</x-layout>

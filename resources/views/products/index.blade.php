@@ -1,7 +1,11 @@
+<x-layout>
+    <x-slot:title>
+        List
+    </x-slot>
 <ul>
     @foreach ($products as $product)
         <li>
-            <h1>{{ $product->name }}</h1>
+            <h2>{{ $product->name }}</h2>
             <p>{{ $product->description }}</p>
             <a href="{{ route('products.show', ['product' => $product]) }}">Show</a>
             <a href="{{ route('products.edit', ['product' => $product]) }}">Edit</a>
@@ -16,3 +20,5 @@
 </ul>
 
 <a href="/products/create">Create new product</a>
+
+</x-layout>
