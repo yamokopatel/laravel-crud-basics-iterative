@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function index() {
         $products = Product::all();
-        return view('products.index', ['allProducts' => $products]);
+        return view('products.index', compact('products'));
     }
 
     public function create() {
@@ -25,12 +25,12 @@ class ProductController extends Controller
 
         $product = Product::create($data);
         // return redirect('/products/' . $product . '/show');
-        return redirect()->route('products.show',[$product]);
+        return redirect()->route('products.show', compact('product'));
     }
 
     public function show(Product $product) {
         // $product = Product::find($id);
-        return view('products.show', ['singleProduct' => $product]);
+        return view('products.show', compact('product'));
     }
 
     public function destroy(Product $product) {
@@ -41,7 +41,7 @@ class ProductController extends Controller
 
     public function edit(Product $product) {
         // $product = Product::find($id);
-        return view('products.edit', ['singleProduct' => $product]);
+        return view('products.edit', compact('product'));
     }
 
     public function update(Request $request, Product $product) {
@@ -54,6 +54,6 @@ class ProductController extends Controller
         ];
 
         $product->update($data);
-        return redirect()->route('products.show', [$product]);
+        return redirect()->route('products.show', compact('product'));
     }
 }

@@ -1,10 +1,10 @@
-<form action="{{ route('products.update', ['product' => $singleProduct]) }}" method="post">
+<form action="{{ route('products.update', ['product' => $product]) }}" method="post">
     @csrf
     @method('PUT')
 
-    <input type="text" name="name" value="{{ $singleProduct->name }}">
-    <input type="number" name="quantity" value="{{ $singleProduct->quantity }}">
-    <textarea name="description">{{ $singleProduct->description }}</textarea>
+    <input type="text" name="name" value="{{ $product->name }}">
+    <input type="number" name="quantity" value="{{ $product->quantity }}">
+    <textarea name="description">{{ $product->description }}</textarea>
     <input type="submit" value="Submit">
 </form>
 
