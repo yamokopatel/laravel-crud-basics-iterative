@@ -11,6 +11,15 @@
             a:hover{
                 color:darkblue;
             }
+            p{
+                font-family: Arial;
+                font-size: 14px;
+            }
+            hr{
+                border-style: dashed;
+                border-width: 2px;
+                color: black;
+            }
         </style>
     </head>
     <body>

@@ -1,6 +1,6 @@
 <x-layout>
 
-<h1>{{ $product->name }}</h1>
+<h2>{{ $product->name }}</h2>
 <h4>Quantity: {{ $product->quantity }}</h4>
 <p>{{ $product->description }}</p>
 
