@@ -28,7 +28,7 @@ class ProductController extends Controller
 
         $product = Product::create($data);
         // return redirect('/products/' . $product . '/show');
-        return redirect()->route('products.show', compact('product'));
+        return redirect()->route('products.show', compact('product'))->with('status', 'Successful data store');
     }
 
     public function show(Product $product) {
