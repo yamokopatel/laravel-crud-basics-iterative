@@ -17,11 +17,14 @@ class ProductController extends Controller
     }
 
     public function store(Request $request) {
-        $data = [
-            'name' => $request->name,
-            'quantity' => $request->quantity,
-            'description' => $request->description,
-        ];
+        $data = $request->validate([
+            // 'name' => $request->name,
+            'name' => 'required|max:63',
+            // 'quantity' => $request->quantity,
+            'quantity' => 'required',
+            // 'description' => $request->description,
+            'description' => 'required|max:255'
+        ]);
 
         $product = Product::create($data);
         // return redirect('/products/' . $product . '/show');

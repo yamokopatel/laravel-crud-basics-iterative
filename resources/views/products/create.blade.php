@@ -6,9 +6,9 @@
 
 <form action="/products" method="post">
     @csrf
-    <input type="text" name="name">
-    <input type="number" name="quantity">
-    <textarea name="description"></textarea>
+    <input type="text" name="name" value="{{ old('name') }}">
+    <input type="number" name="quantity" value="{{ old('quantity') }}">
+    <textarea name="description">{{ old('description') }}</textarea>
     <input type="submit" value="Submit">
 </form>
 
