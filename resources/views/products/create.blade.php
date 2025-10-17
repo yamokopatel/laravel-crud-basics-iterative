@@ -12,7 +12,7 @@
     <input type="submit" value="Submit">
 </form>
 
-<a href="/products">Back to product list</a>
+<!-- <a href="/products">Back to product list</a> -->
 
 
 @if ($errors->any())

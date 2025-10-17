@@ -31,6 +31,8 @@
             </div>
         @endif
         <hr>
+            <x-navigation />
+        <hr>
         {{$slot}}
     </body>
 </html>
