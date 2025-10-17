@@ -20,6 +20,7 @@
                 border-width: 2px;
                 color: black;
             }
+            @vite(['resources/css/app.css', 'resources/js/app.js'])
         </style>
     </head>
     <body>
