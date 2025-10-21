@@ -17,6 +17,7 @@ hr{
     border-style: dashed;
     border-width: 2px;
     color: black;
+    background-color: #FAFCEA;
 }
 button{
     font-style: italic;
@@ -37,6 +38,10 @@ li{
     border-radius: 3px;
     padding: auto;
     width: 600px;
+    background-color: #EEEEEE;
+    margin: 6px;
+    border-color: #DDDDDD;
+    box-shadow: 5px 10px #FAFAFA;
 }
 .submit{
     font-style: italic;
@@ -53,7 +58,12 @@ li{
 }
 ul{
     text-align: left;
+    padding-left: 200px;
+    list-style-type: none;
 }
 body{
-    
+    background-color: #FFFFFF;
+}
+nav{
+    background-color: #FAFCEA;
 }
