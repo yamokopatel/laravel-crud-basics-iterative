@@ -7,13 +7,17 @@
         <li>
             <h2>{{ $product->name }}</h2>
             <p>{{ $product->description }}</p>
-            <a href="{{ route('products.show', ['product' => $product]) }}">Show</a>
-            <a href="{{ route('products.edit', ['product' => $product]) }}">Edit</a>
+            <a href="{{ route('products.show', ['product' => $product]) }}">
+                <button>Show</button>
+            </a>
+            <a href="{{ route('products.edit', ['product' => $product]) }}">
+                <button>Edit</button>
+            </a>
             <form action="{{ route('products.delete', ['product' => $product]) }}" method="post">
                 @csrf
                 @method('DELETE')
 
-                <input type="submit" value="Delete">
+                <input type="submit" value="Delete" class="submit">
             </form>
         </li>
     @endforeach

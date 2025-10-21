@@ -9,7 +9,7 @@
     <input type="text" name="name" value="{{ old('name') }}">
     <input type="number" name="quantity" value="{{ old('quantity') }}">
     <textarea name="description">{{ old('description') }}</textarea>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="submit">
 </form>
 
 <!-- <a href="/products">Back to product list</a> -->

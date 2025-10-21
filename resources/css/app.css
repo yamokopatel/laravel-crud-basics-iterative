@@ -2,13 +2,13 @@
     color: red;
 } */
 
-a{
+/* a{
     font-style: italic;
     color: purple;
 }
 a:hover{
     color:darkblue;
-}
+} */
 p{
     font-family: Arial;
     font-size: 14px;
@@ -17,4 +17,43 @@ hr{
     border-style: dashed;
     border-width: 2px;
     color: black;
+}
+button{
+    font-style: italic;
+    color: white;
+    background-color: purple;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: black;
+    font-family: Arial;
+    font-size: 16px;
+}
+button:hover{
+    background-color: darkblue;
+}
+li{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: auto;
+    width: 600px;
+}
+.submit{
+    font-style: italic;
+    color: white;
+    background-color: darkred;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: black;
+    font-family: Arial;
+    font-size: 16px;
+}
+.submit:hover{
+    background-color: brown;
+}
+ul{
+    text-align: left;
+}
+body{
+    
 }
