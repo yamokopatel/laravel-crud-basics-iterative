@@ -53,18 +53,6 @@ ul{
     list-style-type: none;
     grid-column-start: 2;
 }
-li{
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 3px;
-    padding: auto;
-    /* width: 600px; */
-    background-color: #EEEEEE;
-    margin: 6px;
-    border-color: #DDDDDD;
-    box-shadow: 5px 10px #FAFAFA;
-    grid-column-start: 2;
-}
 
 /*/// IDs ///*/
 #list{
@@ -92,6 +80,17 @@ li{
 .element{
     display: grid;
     grid-template-columns: 15% 70% 15%;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: auto;
+    /* width: 600px; */
+    background-color: #EEEEEE;
+    margin: 6px;
+    border-color: #DDDDDD;
+    box-shadow: 5px 10px #FAFAFA;
+    grid-column-start: 2;
 }
 .deleteSubmit{
     font-style: italic;
@@ -122,4 +121,9 @@ li{
     grid-column-start: 2;
     margin-top: 4px;
     margin-bottom: 4px;
+}
+.errorNotice{
+    font-family: Helvetica;
+    color: #FF0A0A;
+    font-size: 24px;
 }
