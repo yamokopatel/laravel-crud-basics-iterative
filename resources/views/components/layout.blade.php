@@ -7,15 +7,8 @@
     </head>
     <body>
         <h1>Products</h1>
-        <hr>
-        @if (session('status'))
-            <div class="alert alert-success">
-                {{ session('status') }}
-            </div>
-        @endif
-        <hr>
-            <x-navigation />
-        <hr>
+        <x-notification />
+        <x-navigation />
         {{$slot}}
     </body>
 </html>

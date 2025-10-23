@@ -1,4 +1,5 @@
 <nav>
+    <hr>
     <table>
         <tr>
             <td>
@@ -17,4 +18,5 @@
             </td>
         </tr>
     </table>
+    <hr>
 </nav>
