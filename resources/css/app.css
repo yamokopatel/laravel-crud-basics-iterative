@@ -92,6 +92,9 @@ ul{
     box-shadow: 5px 10px #FAFAFA;
     grid-column-start: 2;
 }
+.linkButton{
+    margin-right: 4px;
+}
 .deleteSubmit{
     font-style: italic;
     color: white;

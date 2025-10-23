@@ -10,7 +10,7 @@
                     <h2 class="productName">{{ $product->name }}</h2>
                     <p class="productDesc">{{ $product->description }}</p>
                     <div class="rANDu">
-                        <a href="{{ route('products.show', ['product' => $product]) }}">
+                        <a href="{{ route('products.show', ['product' => $product]) }}" class="linkButton">
                             <button>Show</button>
                         </a>
                         <a href="{{ route('products.edit', ['product' => $product]) }}">
