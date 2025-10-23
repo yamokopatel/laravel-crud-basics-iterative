@@ -9,9 +9,24 @@
 a:hover{
     color:darkblue;
 } */
+
+/*/// TAMPLATES ///*/
+body{
+    background-color: #FFFFFF;
+}
+nav{
+    background-color: #FAFCEA;
+}
+
+/*/// TAGS ///*/
+h2{
+    color: #0A0A0A;
+    font-family: Helvetica;
+    font-size: 28px;
+}
 p{
     font-family: Arial;
-    font-size: 14px;
+    font-size: 16px;
 }
 hr{
     border-style: dashed;
@@ -27,26 +42,41 @@ button{
     border-width: 2px;
     border-color: black;
     font-family: Arial;
-    font-size: 16px;
+    font-size: 22px;
 }
 button:hover{
     background-color: darkblue;
+}
+ul{
+    text-align: left;
+    /* padding-left: 200px; */
+    list-style-type: none;
+    grid-column-start: 2;
 }
 li{
     border-width: 1px;
     border-style: solid;
     border-radius: 3px;
     padding: auto;
-    width: 600px;
+    /* width: 600px; */
     background-color: #EEEEEE;
     margin: 6px;
     border-color: #DDDDDD;
     box-shadow: 5px 10px #FAFAFA;
+    grid-column-start: 2;
 }
+
+/*/// IDs ///*/
+#list{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+/*/// CLASSES ///*/
 .submit{
     font-style: italic;
     color: white;
-    background-color: darkred;
+    background-color: purple;
     border-radius: 6px;
     border-width: 2px;
     border-color: black;
@@ -54,16 +84,39 @@ li{
     font-size: 16px;
 }
 .submit:hover{
+    background-color: darkblue;
+}
+.element{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+.deleteSubmit{
+    font-style: italic;
+    color: white;
+    background-color: darkred;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: black;
+    font-family: Arial;
+    font-size: 22px;
+}
+.deleteSubmit:hover{
     background-color: brown;
 }
-ul{
-    text-align: left;
-    padding-left: 200px;
-    list-style-type: none;
+.productName{
+    grid-column-start: 2;
+    margin-top: 6px;
 }
-body{
-    background-color: #FFFFFF;
+.productDesc{
+    grid-column-start: 2;
+    margin-top: 6px;
 }
-nav{
-    background-color: #FAFCEA;
+.rANDu{
+    grid-column-start: 2;
+    margin-top: 4px;
+}
+.deleteForm{
+    grid-column-start: 2;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
